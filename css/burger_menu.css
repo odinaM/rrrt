@@ -1,0 +1,556 @@
+ @media (max-width: 500px) {
+ /*бургерное меню*/
+.burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px; 
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  margin: 8px 0px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: white;
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 8px 0 white;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 8px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+
+.menu {
+  background-color: #165E78;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.right-logo-header{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 28px;
+  display: block;
+}
+
+.menu-list {
+  top: 22px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 18px;
+  padding: 40px 0; 
+  margin: 0;
+  background-color: #165E78;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  width: 200px; 
+  height: auto; 
+  min-height: 200px; 
+  box-sizing: border-box;
+}
+
+.logo-header {
+  display: none;
+}
+
+.menu-item {
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.menu-item:hover {
+  text-decoration: underline #00B2A0;
+  text-underline-offset: 5px;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}}
+
+
+@media (max-width: 425px) {
+ /*бургерное меню*/
+.burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px; 
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  margin: 8px 0px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: white;
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 8px 0 white;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 8px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+
+.menu {
+  background-color: #165E78;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.right-logo-header{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 28px;
+  display: block;
+}
+
+.menu-list {
+  top: 22px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 18px;
+  padding: 40px 0; 
+  margin: 0;
+  background-color: #165E78;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  width: 200px; 
+  height: auto; 
+  min-height: 200px; 
+  box-sizing: border-box;
+}
+
+.logo-header {
+  display: none;
+}
+
+.menu-item {
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.menu-item:hover {
+  text-decoration: underline #00B2A0;
+  text-underline-offset: 5px;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}}
+
+@media (max-width: 375px) {
+ /*бургерное меню*/
+.burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px; 
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  margin: 8px 0px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: white;
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 8px 0 white;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 8px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+
+.menu {
+  background-color: #165E78;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.right-logo-header{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 28px;
+  display: block;
+}
+
+.menu-list {
+  top: 22px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 18px;
+  padding: 40px 0; 
+  margin: 0;
+  background-color: #165E78;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  width: 200px; 
+  height: auto; 
+  min-height: 200px; 
+  box-sizing: border-box;
+}
+
+.logo-header {
+  display: none;
+}
+
+.menu-item {
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.menu-item:hover {
+  text-decoration: underline #00B2A0;
+  text-underline-offset: 5px;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}}
+
+@media (max-width: 360px) {
+ /*бургерное меню*/
+.burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px; 
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  margin: 8px 0px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: white;
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 8px 0 white;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 8px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+
+.menu {
+  background-color: #165E78;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.right-logo-header{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 28px;
+  display: block;
+}
+
+.menu-list {
+  top: 22px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 18px;
+  padding: 40px 0; 
+  margin: 0;
+  background-color: #165E78;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  width: 200px; 
+  height: auto; 
+  min-height: 200px; 
+  box-sizing: border-box;
+}
+
+.logo-header {
+  display: none;
+}
+
+.menu-item {
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.menu-item:hover {
+  text-decoration: underline #00B2A0;
+  text-underline-offset: 5px;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}}
+
+
+@media (max-width: 320px) {
+ /*бургерное меню*/
+.burger {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px; 
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  margin: 8px 0px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: white;
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 8px 0 white;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 8px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+
+.menu {
+  background-color: #165E78;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.right-logo-header{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 28px;
+  display: block;
+}
+
+.menu-list {
+  top: 22px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 18px;
+  padding: 40px 0; 
+  margin: 0;
+  background-color: #165E78;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  width: 200px; 
+  height: auto; 
+  min-height: 200px; 
+  box-sizing: border-box;
+}
+
+.logo-header {
+  display: none;
+}
+
+.menu-item {
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.menu-item:hover {
+  text-decoration: underline #00B2A0;
+  text-underline-offset: 5px;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}}
